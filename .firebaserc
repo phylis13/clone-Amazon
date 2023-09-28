@@ -1,6 +1,7 @@
 {
   "projects": {
-    "staging": "clone-3d829"
+    "staging": "clone-3d829",
+    "default": "clone-3d829"
   },
   "targets": {},
   "etags": {}

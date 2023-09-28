@@ -1,0 +1,81 @@
+[debug] [2023-09-28T12:02:06.658Z] ----------------------------------------------------------------------
+[debug] [2023-09-28T12:02:06.661Z] Command:       /home/phylis/.nvm/versions/node/v18.18.0/bin/node /home/phylis/.nvm/versions/node/v18.18.0/bin/firebase deploy --only hosting --debug
+[debug] [2023-09-28T12:02:06.661Z] CLI Version:   12.6.1
+[debug] [2023-09-28T12:02:06.662Z] Platform:      linux
+[debug] [2023-09-28T12:02:06.662Z] Node Version:  v18.18.0
+[debug] [2023-09-28T12:02:06.671Z] Time:          Thu Sep 28 2023 15:02:06 GMT+0300 (East Africa Time)
+[debug] [2023-09-28T12:02:06.671Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-09-28T12:02:06.761Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-09-28T12:02:06.763Z] > authorizing via signed-in user (phylisnjeri54@gmail.com)
+[debug] [2023-09-28T12:02:06.763Z] [iam] checking project clone-3d829 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2023-09-28T12:02:06.766Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/clone-3d829:testIamPermissions [none]
+[debug] [2023-09-28T12:02:06.766Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/clone-3d829:testIamPermissions x-goog-quota-user=projects/clone-3d829
+[debug] [2023-09-28T12:02:06.766Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/clone-3d829:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-09-28T12:02:08.642Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/clone-3d829:testIamPermissions 200
+[debug] [2023-09-28T12:02:08.644Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/clone-3d829:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-09-28T12:02:08.649Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/clone-3d829 [none]
+[debug] [2023-09-28T12:02:09.440Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/clone-3d829 200
+[debug] [2023-09-28T12:02:09.442Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/clone-3d829 {"projectId":"clone-3d829","projectNumber":"987304033048","displayName":"clone-Amazon","name":"projects/clone-3d829","resources":{"hostingSite":"clone-3d829"},"state":"ACTIVE","etag":"1_352dc294-e982-49c4-8fcd-f8efb6acbc32"}
+[info] 
+[info] === Deploying to 'clone-3d829'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2023-09-28T12:02:09.473Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/clone-3d829/versions [none]
+[debug] [2023-09-28T12:02:09.474Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/clone-3d829/versions {"status":"CREATED","labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2023-09-28T12:02:11.484Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/clone-3d829/versions 200
+[debug] [2023-09-28T12:02:11.485Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/clone-3d829/versions {"name":"projects/987304033048/sites/clone-3d829/versions/94dac31a494d77cb","status":"CREATED","config":{},"labels":{"deployment-tool":"cli-firebase"}}
+[info] i  hosting[clone-3d829]: beginning deploy... 
+[info] i  hosting[clone-3d829]: found 1 files in build 
+[debug] [2023-09-28T12:02:11.509Z] [hosting] uploading with 200 concurrency
+[debug] [2023-09-28T12:02:11.515Z] [hosting] hash cache [YnVpbGQ] stored for 1 files
+[debug] [2023-09-28T12:02:11.516Z] [hosting][hash queue][FINAL] {"max":0,"min":0,"avg":0,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":5}
+[debug] [2023-09-28T12:02:11.516Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/987304033048/sites/clone-3d829/versions/94dac31a494d77cb:populateFiles [none]
+[debug] [2023-09-28T12:02:11.516Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/987304033048/sites/clone-3d829/versions/94dac31a494d77cb:populateFiles {"files":{"/index.html":"ebaea16fa36d80657cd44499af84af7ae09b44419e0e518b159226aa6843e229"}}
+[debug] [2023-09-28T12:02:13.265Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/987304033048/sites/clone-3d829/versions/94dac31a494d77cb:populateFiles 200
+[debug] [2023-09-28T12:02:13.265Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/987304033048/sites/clone-3d829/versions/94dac31a494d77cb:populateFiles {"uploadUrl":"https://upload-firebasehosting.googleapis.com/upload/sites/clone-3d829/versions/94dac31a494d77cb/files"}
+[debug] [2023-09-28T12:02:13.265Z] [hosting][populate queue][FINAL] {"max":1752,"min":1752,"avg":1752,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":1752}
+[debug] [2023-09-28T12:02:13.266Z] [hosting] uploads queued: 0
+[debug] [2023-09-28T12:02:13.266Z] [hosting][upload queue][FINAL] {"max":0,"min":9999999999,"avg":0,"active":0,"complete":0,"success":0,"errored":0,"retried":0,"total":0,"elapsed":1695902533266}
+[info] i  hosting: upload complete 
+[info] ✔  hosting[clone-3d829]: file upload complete 
+[debug] [2023-09-28T12:02:13.266Z] [hosting] deploy completed after 1773ms
+[debug] [2023-09-28T12:02:13.267Z] [
+  {
+    "config": {
+      "public": "build",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ],
+      "site": "clone-3d829"
+    },
+    "version": "projects/987304033048/sites/clone-3d829/versions/94dac31a494d77cb"
+  }
+]
+[info] i  hosting[clone-3d829]: finalizing version... 
+[debug] [2023-09-28T12:02:13.270Z] >>> [apiv2][query] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/clone-3d829/versions/94dac31a494d77cb updateMask=status%2Cconfig
+[debug] [2023-09-28T12:02:13.270Z] >>> [apiv2][body] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/clone-3d829/versions/94dac31a494d77cb {"status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]}}
+[debug] [2023-09-28T12:02:15.169Z] <<< [apiv2][status] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/clone-3d829/versions/94dac31a494d77cb 200
+[debug] [2023-09-28T12:02:15.169Z] <<< [apiv2][body] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/clone-3d829/versions/94dac31a494d77cb {"name":"projects/987304033048/sites/clone-3d829/versions/94dac31a494d77cb","status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2023-09-28T12:02:11.048813Z","createUser":{"email":"phylisnjeri54@gmail.com"},"finalizeTime":"2023-09-28T12:02:14.912872Z","finalizeUser":{"email":"phylisnjeri54@gmail.com"}}
+[debug] [2023-09-28T12:02:15.170Z] [hosting] finalized version for clone-3d829:[object Object]
+[info] ✔  hosting[clone-3d829]: version finalized 
+[info] i  hosting[clone-3d829]: releasing new version... 
+[debug] [2023-09-28T12:02:15.173Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/clone-3d829/channels/live/releases versionName=projects%2F987304033048%2Fsites%2Fclone-3d829%2Fversions%2F94dac31a494d77cb
+[debug] [2023-09-28T12:02:15.173Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/clone-3d829/channels/live/releases {}
+[debug] [2023-09-28T12:02:17.220Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/clone-3d829/channels/live/releases 200
+[debug] [2023-09-28T12:02:17.221Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/clone-3d829/channels/live/releases {"name":"projects/987304033048/sites/clone-3d829/channels/live/releases/1695902536333000","version":{"name":"projects/987304033048/sites/clone-3d829/versions/94dac31a494d77cb","status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2023-09-28T12:02:11.048813Z","createUser":{"email":"phylisnjeri54@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocIwjkPblILqop0MziyaCaargQmmNdULNVrZW-IVbZWf=mo"},"finalizeTime":"2023-09-28T12:02:14.912872Z","finalizeUser":{"email":"phylisnjeri54@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocIwjkPblILqop0MziyaCaargQmmNdULNVrZW-IVbZWf=mo"}},"type":"DEPLOY","releaseTime":"2023-09-28T12:02:16.333Z","releaseUser":{"email":"phylisnjeri54@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocIwjkPblILqop0MziyaCaargQmmNdULNVrZW-IVbZWf=mo"}}
+[debug] [2023-09-28T12:02:17.222Z] [hosting] release: {"name":"projects/987304033048/sites/clone-3d829/channels/live/releases/1695902536333000","version":{"name":"projects/987304033048/sites/clone-3d829/versions/94dac31a494d77cb","status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2023-09-28T12:02:11.048813Z","createUser":{"email":"phylisnjeri54@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocIwjkPblILqop0MziyaCaargQmmNdULNVrZW-IVbZWf=mo"},"finalizeTime":"2023-09-28T12:02:14.912872Z","finalizeUser":{"email":"phylisnjeri54@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocIwjkPblILqop0MziyaCaargQmmNdULNVrZW-IVbZWf=mo"}},"type":"DEPLOY","releaseTime":"2023-09-28T12:02:16.333Z","releaseUser":{"email":"phylisnjeri54@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocIwjkPblILqop0MziyaCaargQmmNdULNVrZW-IVbZWf=mo"}}
+[info] ✔  hosting[clone-3d829]: release complete 
+[info] 
+[info] ✔  Deploy complete! 
+[info] 
+[info] Project Console: https://console.firebase.google.com/project/clone-3d829/overview
+[info] Hosting URL: https://clone-3d829.web.app

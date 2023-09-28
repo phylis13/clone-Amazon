@@ -42,6 +42,7 @@
     ]
   },
   "devDependencies": {
-    "eslint-plugin-promise": "^6.1.1"
+    "eslint-plugin-promise": "^6.1.1",
+    "source-map-loader": "^4.0.1"
   }
 }
