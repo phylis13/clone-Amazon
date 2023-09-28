@@ -1,7 +1,5 @@
- Click here to access 
- `<a href="http://192.168.120.10:43949">http://192.168.120.10:43949</a>`
-  
-
+#  clone-Amazon
+-  To access this application click this link <a href= http://192.168.120.10:43949/"> Clone Amazon</a>
  
 
 # Amazon Clone
