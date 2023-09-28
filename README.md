@@ -1,6 +1,4 @@
-#  clone-Amazon
--  To access this application click this link <a href= http://192.168.120.10:43949/"> Clone Amazon</a>
- 
+
 
 # Amazon Clone
 
